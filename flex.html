@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charurl="UTF-8">
+    <META NAME="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Document</title>
+    <style>
+        .container
+        {
+            background-color: aliceblue;
+            display:flex;
+            flex-direction: column; /* by default it will get in row*/
+            flex-wrap: wrap; 
+            align-items: end;
+        }
+        .container > div{
+            background-color: blue;
+            height: 50px;
+            width:50px;
+            margin:50px;
+
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="container">
+   <div style="order: 1; flex-grow: 10;">item 1</div>
+   <div style="order: 3; flex-shrink: 3;">item 2</div>
+   <iframe height="100px" width="100px"  style="order:2";></iframe>
+   <div style="order: 2;">item 3</div>
+   </div>
+</body>
+
+</html>
